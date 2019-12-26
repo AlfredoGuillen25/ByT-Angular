@@ -1,0 +1,494 @@
+/*Estilos*/
+
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Muli', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+  }
+
+header, footer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+footer{
+    margin: 1rem 0 0 0;
+}
+
+.btn-header{
+    text-decoration: none;
+    padding: 1rem 2rem;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8));
+    color: cornsilk;
+    border-style: none;
+    outline: 0px;
+    border-radius: 4px;
+    margin: 2rem 0;
+    cursor: pointer;
+    animation: logoefect ease-in 900ms;
+}
+
+header ul, footer ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img, .logo img{
+    width: 360px;
+    height: 150px;
+    margin: 1.2rem;
+    animation: logo ease-in 400ms;
+}
+
+header img, .logo img,.arrow img{
+    cursor: pointer;
+}
+
+header ul img, footer ul img{
+    width: 40px;
+    height: 40px;
+    animation: logoefect ease-in 900ms;
+    cursor: pointer;
+}
+
+footer ul img{
+    margin: 0 1rem;
+}
+
+.encabezado{
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,1), rgba(0,0,0,0.9));
+    box-sizing: border-box;
+}
+
+.encabezado ul{
+    display: flex;
+    padding: 2rem 0;
+}
+
+.encabezado ul li{
+    list-style: none;
+}
+
+.encabezado ul li a{
+    padding: 1rem;
+    color: whitesmoke;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+    transition: all 400ms;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.encabezado ul li a:hover{
+    transition: all 500ms;
+    color: bisque;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: 580px;
+    background: black;
+    overflow: hidden;
+}
+
+.list-img{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.list-img img{
+    width: 100%;
+    height: 100%;
+}
+
+/*Contenedor H*/
+
+.contenedorh{
+    margin: 2rem 0 0 0;
+    box-sizing: border-box;
+}
+
+/*Fin contenedor H*/
+
+/*Animaciones de logo principal*/
+
+@keyframes logo{
+    from{
+        transform: scale(0);
+        transition: all 200ms;
+        opacity: 0;
+    }to{
+        transform: scale(1);
+        transition: all 200ms;
+        opacity: 1;
+    }
+}
+
+@keyframes logoefect{
+    from{
+        transform: scale(0) translateX(-200%);
+        transition: all 800ms;
+        opacity: 0;
+    }to{
+        transform: scale(1) translateX(0);
+        transition: all 800ms;
+        opacity: 1;
+    }
+}
+
+/*Banner*/
+
+.banner{
+    width: 100%;
+    height: 520px;
+    overflow: hidden;
+}
+
+.banner ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: carrusel 20s infinite alternate;
+    animation-timing-function: ease-in;
+}
+
+.banner li {
+    width: 100%;
+    list-style: none;
+}
+
+.banner img{
+    width: 100%;
+    height: 100%;
+    margin-top: -50px;
+} 
+
+@keyframes carrusel{
+    0%{
+        margin-left: 0;
+    }20%{
+        margin-left: 0;
+    }25%{
+        margin-left: -100%;
+    }45%{
+        margin-left: -100%;
+    }50%{
+        margin-left: -200%;
+    }70%{
+        margin-left: -200%;
+    }75%{
+        margin-left: -300%;
+    }100%{
+        margin-left: -300%;
+    }
+}
+
+/*Fin Banner*/
+
+/*Rentar*/
+
+h1{
+    text-align: center;
+}
+
+.cajas{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.caja img{
+    text-align: center;
+}
+
+.caja:nth-child(1){
+    color: #ab796b;
+}
+
+.caja:nth-child(2){
+    color: #f95162;
+}
+
+.caja:nth-child(3){
+    color: green;
+}
+
+.caja:nth-child(4){
+    color: #eab318;
+}
+
+.caja p{
+    color: black;
+}
+
+.number{
+    color: whitesmoke;
+    text-shadow: 1px 1px 1px black;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 56px;
+}
+
+.number:nth-child(1){
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.colorf{
+    background: #f7c347;
+}
+
+.colors{
+    background: #981919;
+}
+
+.colort{
+    background: #458268;
+}
+
+.colorc{
+    background: #000000;
+}
+
+.renta-log{
+    margin: 4rem 0 0 0;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.renta-log img{
+    position: relative;
+    bottom: -5px;
+}
+
+.figura-renta{
+    display: flex;
+    position: absolute;
+    left: -100px;
+    bottom: 0;
+    width: 200%;
+    height: 580px;
+    transform: skew(-10deg, -10deg) translateY(50px);
+    border-style: none;
+    background: #01010114;
+    border-top-right-radius: 100%;
+}
+
+
+/*Rentar*/
+
+/*Promociones*/
+
+.promociones{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    background: black;
+}
+
+.promo{
+    display: flex;
+    justify-content: center;
+    width: 33.3%;
+    height: 690px;
+}
+
+.promo img{
+    width: 100%;
+    height: 100%;
+}
+
+.fondo-promo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.2),rgba(0,0,0,0.7));
+}
+
+.fondo-promo h1{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    margin: 4rem 0 2rem 0;
+    padding: 1rem;
+    font-size: 38px;
+}
+
+.fondo-promo h2{
+    color: yellow;
+    text-shadow: 1px 1px 1px black;
+    font-size: 16px;
+}
+
+.fondo-promo h3{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    padding: 1rem;
+    font-size: 25px;
+}
+
+.fondo-promo a{
+    text-decoration: none;
+    padding: 1rem;
+    border-style: none;
+    outline: none;
+    color: white;
+    border-radius: 4px;
+    background-image: linear-gradient(green,green,#0f650f);
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.fondo-promo a:hover{
+    transition: all 1s;
+    color: black;
+    background-image: linear-gradient(#4fba6e,#4fba6e,#4fba6e);
+}
+
+.fondo-promo ul{
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fondo-promo ul li{
+    font-weight: bold;
+    color: goldenrod;
+    text-align: center;
+}
+
+/*Fin promociones*/
+
+/*CONTACTO*/
+
+.contacto{
+    margin: 2rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contacto h1{
+    text-shadow: 1px 1px 1px white;
+    font-size: 40px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(26,53,120,0.3),rgba(255,255,255,0.8),rgba(255,255,255,1));
+}
+
+.form-img{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-img img{
+    position: relative;
+    top: 57px;
+}
+
+.form{
+    padding: 5rem 0 0 0;
+}
+
+.form form{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form form input, .form form textarea{
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.form form input{
+    padding: 15px 5px; 
+    line-height: 15px;
+}
+
+.form form button{
+    padding: 1rem;
+    width: 100%;
+    background: crimson;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    border-radius: 4px;
+    border-style: none;
+    font-size: 20px;
+    transition: all 1s;
+    cursor: pointer;
+    outline: none;
+}
+
+.form form button:hover{
+    transition: all 1s;
+    background: #a00f10;
+}
+
+/*FIN CONTACTO*/
+
+/*Footer fondo*/
+
+footer{
+    margin: 2rem 0 0 0;
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(255,255,255,1),rgba(255,255,255,0.1));
+    padding: 6rem 0 0 0;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+/*Fin fondo footer*/
+
+
+/*Efectos*/
+
+.content-effect:target{
+    transition: all 1s;
+    
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
